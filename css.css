@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: Quicksand;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+#container{
+    width: 100%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.cabiet{
+    opacity: 0.2;
+}
+ul{
+    list-style: none;
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+#container>.div-one{
+    text-align: center;
+    font-family: Arial;
+    padding-top: 6px;
+    font-size: 11px;
+    height: 20px;
+    background-color: rgb(253, 167, 136);
+}
+/* Phần header ----------------------------------------- */
+header{
+    width: 100%;
+    height: 140px;
+    position: relative;
+}
+.column{
+    position: absolute;
+    margin-top: 35px;
+}
+.icon-fb,.icon-insta{
+    position: absolute;
+    top: 10px;
+    width: 40px;
+}
+.icon-fb{
+    left: 60px;
+}
+.icon-insta{
+    left: 110px;
+}
+.icon-fb:hover, .icon-insta:hover{
+    border: 4px solid rgb(255, 209, 224);   
+    border-radius: 13px;
+    top: 6px;
+}
+.icon-fb:hover{
+    left: 56px;
+}
+.icon-insta:hover{
+    left: 106px;
+}
+.logo{
+    font-size: 40px;
+    padding-left: 572px;
+}
+.icon-canhan, .icon-timkiem, .icon-giohang{
+    position: absolute;
+    bottom: 10px;
+}
+.icon-giohang{
+    width: 30px;
+    left: 1205px;
+}
+.icon-timkiem{
+    width: 32px;
+    left: 1156px;
+}
+.icon-timkiem:hover{
+    bottom: 11px;
+    left: 1155px;
+}
+.icon-canhan{
+    width: 33px;
+    left: 1110px;
+}
+/* phần menu------------------------------ */
+.menu{
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    font-size: 16px;
+}
+.menu>li{
+    float: left;
+    margin-right: 35px;
+    position: relative;
+}
+.sub-menu{
+    position: absolute;
+    display: none;
+    font-family: Quicksand;
+    font-size: 13px;
+    width: 160px;
+    margin-top: 8px;
+    border-top: 2px solid rgb(49, 48, 48);
+    background-color: #fbfbfb;
+}
+.sub-menu>li{
+    border-bottom: 1px solid rgb(150, 145, 145);
+    padding: 8px 15px;
+}
+.sub-menu li a:hover{
+    color: rgb(253, 167, 136);
+}
+.menu li:hover>.sub-menu{
+    display: block;
+}
+.menu>li:first-child{
+    padding-left: 270px;
+}
+.menu>li>span{
+    position: absolute;
+    width: 35px;
+    height: 15px;
+    border: 1px solid;
+    padding-left: 5px;
+    color: white;
+    font-size: 11px;
+    background-color: red;
+    bottom: 21px ;
+    left: 55px;
+}
+.menu>li>b{
+    position: absolute;
+    font-size: 25px;
+    color: red;
+    bottom: 5px;
+}
+.menu>li>a:hover{
+    transition: 0.25s;
+    color: rgb(253, 167, 136);
+    padding-bottom: 9px;
+    border-bottom: 2px solid rgb(49, 48, 48);
+}
+
+/* phần nav banner--------------------------------- */
+#container>nav{
+    width: 100%;
+    height: 280px;
+    background-image: url(img/sale-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav>a>img{
+    width: 100%;
+    height: 280px;
+}
+.cham{
+    color: white;
+    position: absolute;
+    font-size: 22px;
+    left: 625px;
+    top: 390px;
+}
+/* phần ảnh áo banner------------------------------------- */
+.anhbanner{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+/* ảnh---------------------------------------------------- */
+.anhbanner>a>img{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+}
+.anh{
+    left: -25%;
+}
+.anh2{
+    left: 5%
+}
+.anh3{
+    left: 35%;
+}
+.anh4{
+    right: 5%;
+}
+.anh5{
+    right: -25%;
+}
+/* text------------------------------------------------- */
+.anhbanner>div{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 86px;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+}
+.tensp{
+    width: 100%;
+    position: absolute;
+    bottom: 52px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+.tensp>li{
+    float: left;
+    padding-right: 297px;
+}
+.tensp>li:first-child{
+    padding-left: 6%;
+}
+.xemngay, .xemngay1, .xemngay2{
+    position: absolute;
+    padding: 5px 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    border: 1px solid white;
+    background-color: white;
+    bottom: 19px;
+}
+.xemngay{
+    left: 6%;
+}
+.xemngay1{
+    left: 463px;
+}
+.xemngay2{
+    right: 328px;
+}
+.xemngay:hover, .xemngay1:hover, .xemngay2:hover{
+    color: white;
+    background-color: black ;
+    transition: 0.6s;
+}
+/* nút ấn-------------------------------------------------- */
+.anhbanner>span>a{
+    position: absolute;
+    width: 35px;
+    height: 43px;
+    font-size: 25px;
+    border: 1px solid white;
+    background-color: white;
+    padding-left: 15px;
+    padding-top: 7px;
+    border-radius: 50px;
+}
+.nutan{
+    top: 180px;
+    right: 3%;
+}
+.nutan-left{
+    top: 180px;
+    left: 3%;
+}
+/* phần article sanpham-----------------------------------------  */
+article{
+    width: 100%;
+    height: 2470px;
+    background-color: white;
+    position: absolute;
+}
+.textsp>a>p{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+}
+.sp-ban-chay .textsp>a>p{
+    padding-top: 490px;
+}
+.sp-sale{
+    padding-top: 630px;
+}
+.textsp>a>nav{
+    text-align: center;
+    font-size: 13px;
+    margin: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+.textsp>hr{
+    position: relative;
+    top: 7px;
+    left: 598px;
+    width: 68px;
+    height: 0.5px; 
+    background-color: rgb(214, 36, 36)
+}
+/* ---------------------hr---------------------------------------- */
+.newsp>hr{
+    position: relative;
+    width: 100%;
+    opacity: 0;
+}
+/*------------------------- PRODUCT ITEM-------------------------*/
+.pro-loop:first-child{
+    left: 20px;
+    margin-right: 37px;
+}
+.pro-loop:nth-child(6){
+    float: right;
+}
+.pro-loop:nth-child(7){
+    float: right;
+}
+.pro-loop:nth-child(8){
+    float: right;
+}
+.pro-loop:nth-child(9){
+    float: right;
+}
+.pro-loop:nth-child(10){
+    float: right;
+}
+.pro-loop {
+	display: block;
+	position: relative;	
+    overflow: hidden;
+    width: 230px;	
+	height: 100%;
+	background:#fff;
+    margin-bottom: 10px;
+    top: 15px;
+    float: left;
+    margin-right: 19px;
+}
+.pro-loop a{
+    display:block;
+}
+.pro-loop .product-detail{
+    padding: 20px 0;
+}
+.pro-loop .product-img{
+    position:relative;
+    max-height: 300px;
+    overflow: hidden;
+}
+.pro-loop .product-img .product-sale,.pro-loop .product-img .sold-out{
+    position: absolute;
+    text-align: center;
+	top: 10px;
+	font-size: 11px;
+	line-height: 20px;
+	padding: 0;
+	font-weight: bold;
+	z-index: 9;
+	color:#fff;
+	background: #ccc;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.pro-loop .product-img .product-sale{
+    left: 10px;
+    color:#fff;
+    line-height: 40px;
+    background: #f94c43;
+}
+.pro-loop .product-img .sold-out{
+    right: 10px;
+}
+.pro-loop .product-img .sold-out span{
+    opacity: 1;
+}
+.product-detail .box-pro-detail{
+    z-index: 9;
+    width: 100%;
+}
+.pro-loop .product-detail h3{
+    margin: 0 0 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    position: relative;
+}
+.pro-loop .product-detail h3 a{
+    width: 225px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+	line-height: 16px;
+}
+.pro-loop .product-img picture{
+	transition: all 0.5s ease 0s;
+	display: flex;
+	align-items: end;
+	height: 100%;
+}
+.pro-loop .product-img picture:nth-of-type(2){
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	opacity: 0;
+	visibility: hidden;
+}
+.pro-price-highlight{
+    font-size: 13px;
+    color:#f94c43;
+}
+.pro-price-del{
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+    color:#777a7b;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.pro-loop picture>img{
+    width: 230px;
+}
+.pro-loop:hover .product-img picture:nth-of-type(2) {
+    opacity: 1;
+    visibility: visible;
+} 
+.pro-loop:hover .product-img picture:nth-of-type(1) {
+    opacity: 0;
+    visibility: hidden;
+}
+/* ----------------------phần 3ảnh to------------------------ */
+.newsp-anhto{
+    left: 1px;
+    top: 20px;
+    position: relative;
+    width: 420px;
+    height: 100%;
+	display: block;
+    overflow: hidden;
+	background:#fff;
+    float: left;
+}
+.anhto{
+    display: flex;
+	align-items: end;
+	height: 100%;
+}
+.anhto picture img{
+    width: 420px;
+}
+.caption, .buy-now{
+    position: absolute;
+}
+.caption{
+    color: #fff;
+    bottom: 110px;
+    left: 40px;
+}
+.caption span{
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}
+.caption h3{
+    font-family: Quicksand;
+    font-size: 20px;
+}
+.buy-now{
+    padding: 10px 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    border: 1px solid rgb(7, 7, 7);
+    background-color: white;
+    bottom: 60px;
+    left: 40px;
+}
+.buy-now:hover{
+    border: 1px solid red;
+    color: white;
+    background-color: rgb(8, 8, 8) ;
+    transition: 0.6s;
+}
+/* --------------------aside---------------------------------------- */
+aside{
+    width: 100%;
+    height: 80px;
+    top: 2480px;
+    position: relative;
+    background-color: #f3f3f3;
+}
+aside div img{
+    width: 25px;
+    position: absolute;
+}
+.email{
+    top: 27px;
+    left: 25px;
+}
+.text-dienthoai{
+    position: absolute;
+    top: 33px;
+    right: 120px;
+}
+.text-email{
+    padding: 33px 70px;
+}
+.text{
+    position: absolute;
+    top: 18px;
+    left: 250px;
+    width: 550px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    box-shadow: none;
+    padding: 0 20px;
+    background: #fbfbfb;
+}
+.text:hover{
+    border: 1px solid #ffa277;
+    box-shadow: none;
+}
+.dangky{
+    color: white;
+    position: absolute;
+    width: 100px;
+    height: 42px;
+    top: 18px;
+    left: 750px;
+    border: 1px solid #ffa277;
+    background-color: #ffa277;
+}
+.dangky:hover{
+    color: black;
+    background-color: #fbfbfb;
+    transition: 0.6s;
+}
+.dienthoai{
+    position: absolute;
+    right: 355px;
+    top: 27px;
+}
+/* ---------------box chat------------ */
+.box-chat>img{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 80px;
+    z-index: 11;
+}
+
+
+
